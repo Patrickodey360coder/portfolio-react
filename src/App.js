@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
 import Layout from './components/Layout';
 import Navbar from './components/Navbar';
+import Projects from './pages/Projects'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route exact path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
             <Route component={NoMatch} />
           </Switch>
