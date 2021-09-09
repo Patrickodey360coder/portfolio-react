@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const StyledNav = styled.div`
   .navbar{
-    background: red;
+    background: #000;
+    margin-bottom: 2em;
   }
 
   .navbar-brand, .navbar-nav, .nav-link, .navbar-toggler-icon  {
