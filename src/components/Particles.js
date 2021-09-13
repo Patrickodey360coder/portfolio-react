@@ -4,6 +4,6 @@ import ParticlesConfig from '../config/particles-config'
 
 export default function Particle() {
   return (
-    <Particles params={ParticlesConfig}/>
+    <Particles params={ParticlesConfig}> </Particles>
   )
 }
