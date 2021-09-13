@@ -1,11 +1,26 @@
 import React from 'react'
+import styled from 'styled-components'
+// import Particles from 'react-particles-js'
+// import Container from 'react-bootstrap/Container'
+import Particles from '../components/Particles'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+
+const HomeStyle = styled.div`
+  height: 70vh;
+  background: #000;
+`;
 
 const Home = ()=> {
   return (
-    <>
-      <h1>This is the home page</h1>
-      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-    </>
+    <HomeStyle>
+      <Particles>
+        <Row>
+          <Col><h1 className="text-danger text-center">This is the left side</h1></Col>
+        </Row>
+      </Particles>
+    </HomeStyle>
   )
 }
 

@@ -4,16 +4,17 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
-import Layout from './components/Layout';
+// import Layout from './components/Layout';
 import Navbar from './components/Navbar';
-import Projects from './pages/Projects'
+import Projects from './pages/Projects';
+// import Footer from './components/Footer';
 
 
 function App() {
   return (
     <React.Fragment>
       <Navbar/>
-      <Layout>
+      {/* <Layout> */}
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -23,7 +24,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </Router>
-      </Layout>
+      {/* </Layout> */}
     </React.Fragment>
   ); 
 }
